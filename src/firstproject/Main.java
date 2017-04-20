@@ -24,6 +24,8 @@ public class Main {
         Person p = new Person();
         p.setFirstName("Ben");
         p.setLastName("Evans");
-        System.out.println(p.getFullName());
+        int i = 234;
+        double d = 54.25;        
+        System.out.println(p.getFullName() +" ; " + i);
     }
 }
