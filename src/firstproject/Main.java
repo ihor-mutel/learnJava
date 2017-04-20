@@ -21,7 +21,7 @@ public class Main {
     }
 
     private void run() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Person p = new Person();
     }
     
 }
