@@ -26,8 +26,8 @@ public class Main {
         p.setLastName("Evans");
         int i = 234;
         double d = 54.25;        
-        System.out.println(p.getFullName() +" ; Age: " + i + p.getAge());        
-        i = 42;
-        System.out.println(p.getFullName() +" ; " + i);
+        System.out.println(p.getFullName() +" ; Age: " + p.getAge());        
+        p.setAge(14);
+        System.out.println(p.getFullName() +" ; Age: " + p.getAge()); 
     }
 }
