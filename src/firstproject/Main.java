@@ -22,7 +22,7 @@ public class Main {
 
     private void run() {
         Person p = new Person();
-        p.setFirstName("Ben");
+//        p.setFirstName("Ben");
         p.setLastName("Evans");
         int i = 234;
         double d = 54.25;        
