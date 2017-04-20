@@ -22,6 +22,8 @@ public class Main {
 
     private void run() {
         Person p = new Person();
+        p.setFirstName("Ben");
+        p.setLastName("Evans");
+        System.out.println(p.getFullName());
     }
-    
 }
