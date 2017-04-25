@@ -32,7 +32,7 @@ public class Main {
         //c = false;
         i = (int) d;
         
-        
+        String int2 = "some word";
         
         System.out.println(p.getFullName() +" ; Age: " + i);        
         p.setAge(14);
