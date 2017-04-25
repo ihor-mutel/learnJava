@@ -29,6 +29,8 @@ public class Main {
         boolean b = true;
         char c = 'X';
         
+        c = false;
+        
         System.out.println(p.getFullName() +" ; Age: " + p.getAge());        
         p.setAge(14);
         System.out.println(p.getFullName() +" ; Age: " + p.getAge()); 
