@@ -30,7 +30,7 @@ public class Main {
         char c = 'X';
         
         //c = false;
-        b = 'Z';
+        d = 3;
         
         
         System.out.println(p.getFullName() +" ; Age: " + p.getAge());        
