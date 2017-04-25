@@ -30,10 +30,11 @@ public class Main {
         char c = 'X';
         
         //c = false;
-        d = 3;
+        i = (int) d;
         
         
-        System.out.println(p.getFullName() +" ; Age: " + p.getAge());        
+        
+        System.out.println(p.getFullName() +" ; Age: " + i);        
         p.setAge(14);
         System.out.println(p.getFullName() +" ; Age: " + p.getAge()); 
     }
