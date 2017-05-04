@@ -32,14 +32,14 @@ public class Main {
         
         p.setMother(mum);
         
-        while (p.getAge() < 55) {
+        AGE: while (p.getAge() < 55) {
             switch(p.getAge()){
                 case 40:
                    System.out.println(p.getFullName() +" - Signficant birthday: " + p.getAge() );
                    break;
                 case 50:
                    System.out.println(p.getFullName() +" - Signficant birthday: " + p.getAge() );
-                   break;
+                   break AGE;
             }
             p.birthday();
         }
