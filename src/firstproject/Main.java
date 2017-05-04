@@ -32,9 +32,9 @@ public class Main {
         
         p.setMother(mum);
         
-        for (int i=0; i <10; i++) {
+        while (p.getAge() < 42) {
+            System.out.println(p.getFullName() +" ; Age: " + p.getAge()); 
             p.birthday();
-            System.out.println(p.getFullName() +" ; Age: " + p.getAge());  
         }
       
 
