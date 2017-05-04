@@ -32,11 +32,12 @@ public class Main {
         
         p.setMother(mum);
         
-        do {
-            System.out.println(p.getFullName() +" ; Age: " + p.getAge()); 
+        while (p.getAge() < 55) {
+            if(p.getAge()==40 || p.getAge()==50){
+                    System.out.println(p.getFullName() +" - Signficant birthday: ");             
+                }
             p.birthday();
-        } while (p.getAge() < 42);
-      
+        }
 
     }
 }
