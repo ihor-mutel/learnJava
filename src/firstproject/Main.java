@@ -22,17 +22,12 @@ public class Main {
 
     private void run() {
         Person p = new Person();
-//        p.setFirstName("Ben");
+        p.setFirstName("Ben");
         p.setLastName("Evans");
-        int i = 234;
-        double d = 54.25;
-        boolean b = true;
-        char c = 'X';
-        
-        //c = false;
-        i = (int) d;
-        
-        String int2 = "some word";
+
+        Person mum = new Person();
+        mum.setFirstName("Sue");
+        mum.setLastName("Evans");
         
         System.out.println(p.getFullName() +" ; Age: " + i);        
         p.setAge(14);
