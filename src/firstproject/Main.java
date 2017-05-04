@@ -18,6 +18,7 @@ public class Main {
         // TODO code application logic here
         Main m = new Main();
         m.run();
+        m.exampleMethod()
     }
 
     private void run() {
@@ -44,5 +45,9 @@ public class Main {
             p.birthday();
         }
 
+    }
+
+    private void exampleMethod() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
