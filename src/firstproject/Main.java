@@ -32,8 +32,11 @@ public class Main {
         
         p.setMother(mum);
         
-        System.out.println(p.getFullName() +" ; Mum: " + p.getMother().getFullName());        
-        p.setAge(14);
-        System.out.println(p.getFullName() +" ; Age: " + p.getAge()); 
+        for (int i=0; i <10; i++) {
+            p.birthday();
+            System.out.println(p.getFullName() +" ; Age: " + p.getAge());  
+        }
+      
+
     }
 }
