@@ -29,7 +29,9 @@ public class Main {
         mum.setFirstName("Sue");
         mum.setLastName("Evans");
         
-        System.out.println(p.getFullName() +" ; Age: " + i);        
+        p.setMother(mum);
+        
+        System.out.println(p.getFullName() +" ; Mum: " + p.getMother().getFullName());        
         p.setAge(14);
         System.out.println(p.getFullName() +" ; Age: " + p.getAge()); 
     }
