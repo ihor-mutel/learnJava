@@ -24,6 +24,7 @@ public class Main {
         Person p = new Person();
         p.setFirstName("Ben");
         p.setLastName("Evans");
+        p.setAge(21);
 
         Person mum = new Person();
         mum.setFirstName("Sue");
