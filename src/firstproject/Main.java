@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package firstproject;
-
+import java.io.IOException;
 /**
  *
  * @author The Revenant
@@ -14,15 +14,12 @@ public class Main {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         // TODO code application logic here
         Main m = new Main();
         m.run();
-        try{
-            m.exampleMethod();
-        } 
-        catch (UnsupportedOperationException e) {
-        }
+        System.in.read();
+
         
     }
 
@@ -37,6 +34,9 @@ public class Main {
         mum.setLastName("Evans");
         
         p.setMother(mum);
+        synchronized (p){
+            m.setAge(38);
+        }
         
         AGE: while (p.getAge() < 55) {
             switch(p.getAge()){
@@ -52,8 +52,5 @@ public class Main {
 
     }
 
-    private void exampleMethod() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
 
-    }
 }
