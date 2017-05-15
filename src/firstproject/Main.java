@@ -51,6 +51,11 @@ public class Main {
         System.out.println(p.getFullName() + " ; Age " + p.getAge());
 //        System.out.println(p.getFullName().equalsIgnoreCase("BEN Evans"));
         System.out.println(p.getFullName().startsWith("B"));
+        
+        int i = 17;
+        
+        System.out.println(i % 5);
+        
     }
 
     
