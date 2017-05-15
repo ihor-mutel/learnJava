@@ -67,10 +67,12 @@ public class Main {
         }
         ave = ave / ages.length;
         
-        char[] letters = {'a', 'f', 'z', '!', 'L', 'T'};
-        System.out.println(Arrays.toString(letters));
-        Arrays.sort(letters);
-        System.out.println(Arrays.toString(letters));        
+        System.out.println(ages[6]);
+        
+//        char[] letters = {'a', 'f', 'z', '!', 'L', 'T'};
+//        System.out.println(Arrays.toString(letters));
+//        Arrays.sort(letters);
+//        System.out.println(Arrays.toString(letters));     
 //        System.out.println(ave);
     }
 
