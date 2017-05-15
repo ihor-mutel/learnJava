@@ -25,55 +25,25 @@ public class Main {
     }
 
     private void run() {
-        Person p = new Person();
-        p.setFirstName("Ben");
-        p.setLastName("Evans");
-        p.setAge(21);
+        Person ben = new Person();
+        ben.setFirstName("Ben");
+        ben.setLastName("Evans");
+        ben.setAge(38);
 
         Person mum = new Person();
         mum.setFirstName("Sue");
         mum.setLastName("Evans");
-        p.setMother(mum);
+        mum.setAge(67);
+        
+        ben.setMother(mum);
                 
+        Person dad = new Person();
+        dad.setFirstName("Martian");
+        dad.setLastName("Evans");
+        dad.setAge(68);
         
-        AGE: while (p.getAge() < 55) {
-            switch(p.getAge()){
-                case 40:
-                   System.out.println(p.getFullName() +" - Signficant birthday: " + p.getAge() );
-                   break;
-                case 50:
-                   System.out.println(p.getFullName() +" - Signficant birthday: " + p.getAge() );
-                   break AGE;
-            }
-            p.birthday();
-        }
-        //for (int i=0; i<40; i++) {
-        //    System.out.println(Math.random());
-        //}
-        
-        //System.out.println(1 + Integer.parseInt("42"));
-        System.out.println(p);
-        
-        int[] ages = {67, 22, 14, 37, 47};
-        
-        System.out.println(Arrays.toString(ages));
-        Arrays.sort(ages);
-        System.out.println(Arrays.toString(ages));
-        
-        double ave = 0.0;
-        for (int i=0; i<ages.length; i++) {
-            ave += ages[i];
-            
-        }
-        ave = ave / ages.length;
-        
-        System.out.println(ages[6]);
-        
-//        char[] letters = {'a', 'f', 'z', '!', 'L', 'T'};
-//        System.out.println(Arrays.toString(letters));
-//        Arrays.sort(letters);
-//        System.out.println(Arrays.toString(letters));     
-//        System.out.println(ave);
+        Person[] myFamaly = {ben, mum, dad};
+        System.out.println(Arrays.toString(myFamaly));
     }
 
     
