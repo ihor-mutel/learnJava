@@ -56,8 +56,14 @@ public class Main {
         
         int[] ages = {14, 22, 37, 47};
         
-        System.out.println(Arrays.toString(ages));
-        System.out.println(ages[1]);
+        double ave = 0.0;
+        for (int i=0; i<ages.length; i++) {
+            ave += ages[i];
+            
+        }
+        ave = ave / ages.length;
+        
+        System.out.println(ave);
     }
 
     
