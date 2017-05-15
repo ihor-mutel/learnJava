@@ -5,6 +5,7 @@
  */
 package firstproject;
 import java.io.IOException;
+import java.util.Arrays;
 /**
  *
  * @author The Revenant
@@ -33,9 +34,7 @@ public class Main {
         mum.setFirstName("Sue");
         mum.setLastName("Evans");
         p.setMother(mum);
-
-
-        
+                
         
         AGE: while (p.getAge() < 55) {
             switch(p.getAge()){
@@ -55,9 +54,9 @@ public class Main {
         //System.out.println(1 + Integer.parseInt("42"));
         System.out.println(p);
         
-//        int[] ages = {14, 22, 37, 47};
-//        
-//        System.out.println(ages);
+        int[] ages = {14, 22, 37, 47};
+        
+        System.out.println(Arrays.toString(ages));
     }
 
     
