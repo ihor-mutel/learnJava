@@ -57,6 +57,7 @@ public class Main {
         int[] ages = {14, 22, 37, 47};
         
         System.out.println(Arrays.toString(ages));
+        System.out.println(ages[1]);
     }
 
     
