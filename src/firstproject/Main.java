@@ -44,6 +44,14 @@ public class Main {
         
         Person[] myFamaly = {ben, mum, dad};
         System.out.println(Arrays.toString(myFamaly));
+        
+        double ave = 0.0;
+        
+        for (Person p : myFamaly) {
+            ave += p.getAge();
+        }
+        ave = ave / myFamaly.length;
+        System.out.println(ave);
     }
 
     
