@@ -32,7 +32,7 @@ public class Main {
         Person mum = new Person();
         mum.setFirstName("Sue");
         mum.setLastName("Evans");
-        
+        p.setMother(mum);
 
 
         
