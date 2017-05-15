@@ -52,8 +52,12 @@ public class Main {
         //    System.out.println(Math.random());
         //}
         
-        System.out.println(Integer.parseInt("42"));
+        //System.out.println(1 + Integer.parseInt("42"));
+        System.out.println(p);
         
+//        int[] ages = {14, 22, 37, 47};
+//        
+//        System.out.println(ages);
     }
 
     
