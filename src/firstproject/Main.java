@@ -54,7 +54,11 @@ public class Main {
         //System.out.println(1 + Integer.parseInt("42"));
         System.out.println(p);
         
-        int[] ages = {14, 22, 37, 47};
+        int[] ages = {67, 22, 14, 37, 47};
+        
+        System.out.println(Arrays.toString(ages));
+        Arrays.sort(ages);
+        System.out.println(Arrays.toString(ages));
         
         double ave = 0.0;
         for (int i=0; i<ages.length; i++) {
