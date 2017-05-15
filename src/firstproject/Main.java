@@ -48,13 +48,11 @@ public class Main {
             }
             p.birthday();
         }
-        System.out.println(p.getFullName() + " ; Age " + p.getAge());
-//        System.out.println(p.getFullName().equalsIgnoreCase("BEN Evans"));
-        System.out.println(p.getFullName().startsWith("B"));
+        //for (int i=0; i<40; i++) {
+        //    System.out.println(Math.random());
+        //}
         
-        int i = 17;
-        
-        System.out.println(i % 5);
+        System.out.println(Integer.parseInt("42"));
         
     }
 
