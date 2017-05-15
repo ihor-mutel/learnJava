@@ -33,10 +33,9 @@ public class Main {
         mum.setFirstName("Sue");
         mum.setLastName("Evans");
         
-        p.setMother(mum);
-        synchronized (p){
-            m.setAge(38);
-        }
+
+
+        
         
         AGE: while (p.getAge() < 55) {
             switch(p.getAge()){
@@ -49,8 +48,9 @@ public class Main {
             }
             p.birthday();
         }
-
+        System.out.println(p.getFullName() + " ; Age " + p.getAge());
+        System.out.println(p.getFullName().equals("Ben Evans"));
     }
 
-
+    
 }
