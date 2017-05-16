@@ -57,7 +57,7 @@ public class Main {
         
         System.out.println(ave);
                 
-        Object o = new Student("Billy", "Bunter");
+        Person o = new Student("Billy", "Bunter");
         System.out.println(o.getClass());
         
 //        o = "Otter";
@@ -65,7 +65,7 @@ public class Main {
         
         
         if (o instanceof Person) {
-            System.out.println("o is a person");       
+            System.out.println("o is a person");
         }
     }
 
