@@ -58,7 +58,7 @@ public class Main {
         System.out.println(ave);
                 
         Person o = new Student("Billy", "Bunter");
-        System.out.println(o.getClass());
+        System.out.println(o);
         
 //        o = "Otter";
 //        System.out.println(o.getClass());
