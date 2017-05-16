@@ -12,7 +12,8 @@ package firstproject;
 public class Student extends Person{
     
     private int grade; //percentage
-    
+    private Address addr;
+
     public Student(String first, String last) {
         super(first, last);
     }
@@ -21,4 +22,7 @@ public class Student extends Person{
         return grade;
     }
     
+    public void setGrade(int grade) {
+        this.grade = grade;
+    }
 }
