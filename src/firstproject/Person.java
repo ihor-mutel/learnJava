@@ -9,7 +9,7 @@ package firstproject;
  *
  * @author The Revenant
  */
-public class Person {
+public class Person implements Contactable{
     
     private final String firstName;
     private final String lastName;
@@ -34,7 +34,7 @@ public class Person {
         this.mother = mother;
     }
 
-    public String getFirstName() {
+    public final String getFirstName() {
         return firstName;
     }
 
