@@ -61,6 +61,14 @@ public class Main {
         
         System.out.println(myFamily);
 //        System.out.println(myFamily.get("dad"));
+
+        Person ben2 = new Person();
+        ben2.setFirstName("Ben");
+        ben2.setLastName("Evans");
+        ben2.setAge(38);
+        ben2.setMother(mum);
+        
+        System.out.println(myFamily.get(ben2));
     }
 
     
