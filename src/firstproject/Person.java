@@ -11,8 +11,8 @@ package firstproject;
  */
 public class Person {
     
-    private String firstName;
-    private String lastName;
+    private final String firstName;
+    private final String lastName;
     private int age;
     private Person mother;
     
