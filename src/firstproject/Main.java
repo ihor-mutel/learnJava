@@ -62,6 +62,11 @@ public class Main {
 
         
         System.out.println(ave);
+        
+        Object o = new Person();
+        if (o instanceof Person) {
+            System.out.println("o is a Person!");
+        }
     }
 
     
