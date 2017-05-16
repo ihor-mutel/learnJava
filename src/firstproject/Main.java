@@ -46,29 +46,20 @@ public class Main {
         dad.setLastName("Evans");
         dad.setAge(68);
         
-        Map<Person, String> myFamily = new HashMap<>();
-        myFamily.put(ben, ben.getFirstName());
-        myFamily.put(mum, mum.getFirstName());
-        myFamily.put(dad, dad.getFirstName());
+        List<Person> myFamily = new ArrayList<>();
+        myFamily.add(ben);
+        myFamily.add(mum); //, mum.getFirstName());
+        myFamily.add(dad); //, dad.getFirstName());
         
         double ave = 0.0;
         
-//        for (String s : myFamily.keySet()) {
-//            Person p = myFamily.get(s);
-//            ave += p.getAge();
-//        }
-//        ave = ave / myFamily.size();
-        
-        System.out.println(myFamily);
-//        System.out.println(myFamily.get("dad"));
+        for (Person p : myFamily) {
+            ave += p.getAge();
+        }
+        ave = ave / myFamily.size();
 
-        Person ben2 = new Person();
-        ben2.setFirstName("Ben");
-        ben2.setLastName("Evans");
-        ben2.setAge(38);
-        ben2.setMother(mum);
         
-        System.out.println(myFamily.get(ben2));
+        System.out.println(ave);
     }
 
     
