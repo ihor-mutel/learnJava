@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 /**
@@ -53,7 +54,8 @@ public class Main {
         
         double ave = 0.0;
         
-        for (Person p : myFamily) {
+        for (Iterator<Person> it = myFamily.iterator(); it.hasNext();) {
+            Person p = it.next();
             ave += p.getAge();
         }
         ave = ave / myFamily.size();
