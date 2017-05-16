@@ -57,4 +57,9 @@ public class Person implements Contactable{
     public void birthday() {
         age++;
     }
+
+    @Override
+    public void contact() {
+        System.out.println("I was contacted!");
+    }
 }
