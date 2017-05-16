@@ -9,6 +9,6 @@ package firstproject;
  *
  * @author The Revenant
  */
-interface Contactable {
-    
+public interface Contactable {
+    public void contact();
 }
