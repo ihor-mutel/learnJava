@@ -15,49 +15,42 @@ public class Person {
     private String lastName;
     private int age;
     private Person mother;
-
+    
+    public Person(String first, String last){
+        firstName = first;
+        lastName = last;
+        age = 18;
+    }
     @Override
     public String toString() {
         return "Person{" + "firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + ", mother=" + mother + '}';
-    }
-    
-    
-    /*
-    public Person() {
-        age = 18;
-    }*/
-
-    public Person getMother() {
-        return mother;
-    }
-
-    public void setMother(Person mother) {
-        this.mother = mother;
-    }
-    
-    public int getAge() {
-        return age;
     }
 
     public void setAge(int age) {
         this.age = age;
     }
-    
-    public String getFirstName() {
-        return firstName;
+
+    public void setMother(Person mother) {
+        this.mother = mother;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public String getFirstName() {
+        return firstName;
     }
 
     public String getLastName() {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public int getAge() {
+        return age;
     }
+
+    public Person getMother() {
+        return mother;
+    }
+
+ 
     public String getFullName(){
         return firstName +" "+ lastName;
     }
