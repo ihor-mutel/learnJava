@@ -62,10 +62,14 @@ public class Main {
 
         
         System.out.println(ave);
-        
+                
         Object o = new Person();
+        o = "Otter";
+        System.out.println(o.getClass());
+        
+        
         if (o instanceof Person) {
-            System.out.println("o is a Person!");
+            
         }
     }
 
