@@ -5,7 +5,11 @@
  */
 package firstproject;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 /**
  *
  * @author The Revenant
@@ -42,16 +46,19 @@ public class Main {
         dad.setLastName("Evans");
         dad.setAge(68);
         
-        Person[] myFamaly = {ben, mum, dad};
-        System.out.println(Arrays.toString(myFamaly));
+        Map<String, Person> myFamily = new HashMap<>();
+        myFamily.put("me", ben);
+        myFamily.put("mum", mum);
+        myFamily.put("dad", dad);
         
         double ave = 0.0;
         
-        for (Person p : myFamaly) {
+        for (String s : myFamily.keySet()) {
+            Person p = myFamily.get(s);
             ave += p.getAge();
         }
-        ave = ave / myFamaly.length;
-        System.out.println(ave);
+        ave = ave / myFamily.size();
+        System.out.println(myFamily.get("dad"));
     }
 
     
