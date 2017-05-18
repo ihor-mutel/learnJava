@@ -9,6 +9,6 @@ package firstproject;
  *
  * @author The Revenant
  */
-public class Colour {
-    
+public enum Colour {
+    RED, ORANGE, YELLOW, BLUE, INDIGO, VIOLET
 }
