@@ -18,6 +18,14 @@ public class Person implements Contactable{
     private Contactable answeringService;
     private Colour favouriteColour;
 
+    public Colour getFavouriteColour() {
+        return favouriteColour;
+    }
+
+    public void setFavouriteColour(Colour favouriteColour) {
+        this.favouriteColour = favouriteColour;
+    }
+
     public Contactable getAnsweringService() {
         return answeringService;
     }
