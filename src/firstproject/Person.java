@@ -15,6 +15,16 @@ public class Person implements Contactable{
     private final String lastName;
     private int age;
     private Person mother;
+    private Contactable answeringService;
+
+    public Contactable getAnsweringService() {
+        return answeringService;
+    }
+
+    public void setAnsweringService(Contactable answeringService) {
+        this.answeringService = answeringService;
+    }
+    
     
     public Person(String first, String last){
         firstName = first;
@@ -60,6 +70,7 @@ public class Person implements Contactable{
 
     @Override
     public void contact() {
-        System.out.println("I was contacted!");
+        //System.out.println("I was contacted!");
+        answeringService.contact();
     }
 }
