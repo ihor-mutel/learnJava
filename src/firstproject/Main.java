@@ -30,15 +30,16 @@ public class Main {
     }
 
     private void run() {
-        Person ben = new Person("Ben", "Evans");
+        Person ben = new Person("Ben", "Evans", new Voicemail());
         ben.setAge(38);
-
-        Person mum = new Person("Sue", "Evans");
+        //ben.setFavouriteColour(Colour.VIOLET)
+        
+        Person mum = new Person("Sue", "Evans", new Voicemail());
         mum.setAge(67);
         
         ben.setMother(mum);
                 
-        Person dad = new Person("Martian", "Evans");
+        Person dad = new Person("Martian", "Evans", new Voicemail());
         dad.setAge(68);
         
         List<Person> myFamily = new ArrayList<>();
@@ -57,10 +58,10 @@ public class Main {
         
         System.out.println(ave);
                 
-        Contactable o = new Student("Billy", "Bunter");
+        Contactable o = new Student("Ben", "Evans", mum);
        
         o.callTwice();   
-
+        
         
         System.out.println(o.toString());
 

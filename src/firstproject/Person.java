@@ -15,7 +15,7 @@ public class Person implements Contactable{
     private final String lastName;
     private int age;
     private Person mother;
-    private Contactable answeringService;
+    private final Contactable answeringService;
     private Colour favouriteColour;
 
     public Colour getFavouriteColour() {
@@ -30,20 +30,23 @@ public class Person implements Contactable{
         return answeringService;
     }
 
-    public void setAnsweringService(Contactable answeringService) {
-        this.answeringService = answeringService;
-    }
+//    public void setAnsweringService(Contactable answeringService) {
+//        this.answeringService = answeringService;
+//    }
+
     
-    
-    public Person(String first, String last){
+    public Person(String first, String last, Contactable forwarding){
         firstName = first;
         lastName = last;
         age = 18;
+        answeringService = forwarding;
     }
+
     @Override
     public String toString() {
-        return "Person{" + "firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + ", mother=" + mother + '}';
+        return "Person{" + "firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + ", mother=" + mother + ", answeringService=" + answeringService + ", favouriteColour=" + favouriteColour + '}';
     }
+
 
     public void setAge(int age) {
         this.age = age;

@@ -14,8 +14,8 @@ public class Student extends Person{
     private int grade; //percentage
     private Address addr;
 
-    public Student(String first, String last) {
-        super(first, last);
+    public Student(String first, String last, Contactable forwarding) {
+        super(first, last, forwarding);
     }
 
     public Address getAddr() {
