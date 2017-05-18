@@ -16,6 +16,7 @@ public class Person implements Contactable{
     private int age;
     private Person mother;
     private Contactable answeringService;
+    private Colour favouriteColour;
 
     public Contactable getAnsweringService() {
         return answeringService;
