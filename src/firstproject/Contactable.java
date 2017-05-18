@@ -11,4 +11,9 @@ package firstproject;
  */
 public interface Contactable {
     public void contact();
+    
+    public default void callTwice(){
+        contact();
+        contact();
+    }
 }
